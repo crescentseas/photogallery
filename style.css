@@ -1,0 +1,47 @@
+html {
+    background-color: #000000;
+    padding: 0px 20px 0px 20px;
+}
+
+body {
+    margin-top: 0px;
+    background-color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 485px;
+}
+
+.contact, footer {
+    background-color: #000000;
+}
+
+footer {
+    color:#FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h1 {
+    color: #007d7b;
+    text-transform: uppercase;
+}
+
+nav {
+    background-color: #000000;
+    color:#FFFFFF;
+}
+
+nav h2 {
+    visibility: hidden;
+    height:1px;
+}
+
+nav li {
+    list-style:none;
+    display:inline-flex;
+    text-transform: uppercase;
+    font-weight:bold;
+  }
+
+nav a {
+    text-align: center;
+}
