@@ -23,25 +23,176 @@ footer {
 h1 {
     color: #007d7b;
     text-transform: uppercase;
+    font-size: 3em;
+    margin-bottom: 20px;
 }
 
 nav {
     background-color: #000000;
     color:#FFFFFF;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
-nav h2 {
-    visibility: hidden;
-    height:1px;
+nav a {
+    font-size: 1.5em;
+    justify-content: center;
 }
 
 nav li {
     list-style:none;
-    display:inline-flex;
+    display:inline;
     text-transform: uppercase;
     font-weight:bold;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: center;
   }
 
-nav a {
+[href="#top"] {
+    position:fixed;
+    bottom:0px;
+    right:0px;
+    border-radius:10px 0px 0px 0px;
+    text-decoration: none;
+    border-color: #FFFFFF;
+    color:#FFFFFF;
+  }
+
+  h2 {
+    font-size: 2em;
+    text-transform: uppercase;
     text-align: center;
+  }
+
+p {
+    font-size: 1.25em;
+    padding-left: 10px;
+}
+
+figcaption, label, input, small {
+    font-size: 1em;
+}
+
+figure {
+    display: block;
+}
+
+.bottomwhite {
+    position: relative;
+    bottom: 60px;
+    left: 120px;
+    color:#FFFFFF;
+    text-transform: uppercase;
+}
+
+.topwhite {
+    position: relative;
+    text-transform: uppercase;
+    bottom: 290px;
+    color:#FFFFFF;
+    left: 100px;
+}
+
+.blacktop {
+    position: relative;
+    text-transform: uppercase;
+    bottom:290px;
+    left: 100px;
+}
+
+.italy {
+    position: relative;
+    text-transform: uppercase;
+    bottom: 60px;
+    left: 135px;
+}
+
+.iran {
+    position: relative;
+    text-transform: uppercase;
+    bottom: 640px;
+    left: 140px;
+}
+
+.ireland {
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contact {
+    padding: 20px;
+}
+
+.contact h2 {
+    color: #FFFFFF;
+    padding-top: 20px;
+}
+
+.contact p {
+    color:#FFFFFF;
+    text-align: center;
+}
+
+.contact label {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+form {
+    padding-top: 20px;
+}
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+.contact ::placeholder{
+    color:#007d7b;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+input[type=submit] {
+    background-color: #007d7b;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 12px 90px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+    left:120px;
+}
+
+footer {
+    justify-content: center;
+}
+
+@media screen and (min-width:880px) {
+    div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    nav li {
+        justify-content: right;
+        position:relative;
+        left: 1000px;
+    }
 }
